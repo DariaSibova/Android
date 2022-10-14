@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.os {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+}
+.os .logo {
+  font-size: 7em;
+  color: #fff;
+  text-shadow: 0 0 100px #0f0d, 0 0 150px #0f0d, 0 0 200px #0f0d,
+    0 0 250px #0f0d, 0 0 300px #0f0d;
+  animation: logo 2s linear infinite;
+}
+@keyframes logo {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
